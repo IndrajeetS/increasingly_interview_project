@@ -369,7 +369,8 @@ body {
   margin-bottom: 19px;
 }
 #product_totalsId .cart_section .cartTotals p,
-#product_totalsId .cart_section .cartTotalPrice div {
+#product_totalsId .cart_section .cartTotalPrice div,
+#product_totalsId .cart_section .cartTotals p #totalAddOnProduct {
   font-size: 14px;
   font-weight: 500;
   display: flex;

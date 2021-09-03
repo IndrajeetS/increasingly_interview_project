@@ -184,7 +184,7 @@ let product_detailsDiv = document.getElementById("product_detailsId");
 product_detailsDiv.innerHTML = product_details;
 
 let addOnProductsList = `<div class="product_row">
-  <input class="checkBox col-2" type="checkbox" id="dvd" name="dvd" value="dvd">
+  <input class="checkBox col-2" type="checkbox" name="129.99" id="dvd" value="dvd">
   <label for="dvd">
     <div class="img">
       <img src="./assests/images/addOn-1.png" alt="DVD" />
@@ -229,7 +229,7 @@ let addOnProductsList = `<div class="product_row">
 </div>
 
 <div class="product_row">
-  <input class="checkBox col-2" type="checkbox" id="cable" name="cable" value="cable">
+  <input class="checkBox col-2" type="checkbox" name="49.99" id="cable" value="cable">
   <label for="cable">
     <div class="img">
       <img src="./assests/images/addOn-2.png" alt="cable" />
@@ -267,7 +267,7 @@ let addOnProductsList = `<div class="product_row">
 </div>
 
 <div class="product_row">
-  <input class="checkBox col-2" type="checkbox" id="card" name="card" value="card">
+  <input class="checkBox col-2" type="checkbox" name="64.99" id="card" value="card">
   <label for="card">
     <div class="img">
       <img src="./assests/images/addOn-3.png" alt="card" />
@@ -297,7 +297,6 @@ let addOnProductsList = `<div class="product_row">
       <div class="product_price">
         <div>
           <p class="salePrice">$64.99</p>
-          <p class="savings">SAVE $70.00 (35%)</p>
         </div>
       </div>
 
@@ -315,15 +314,15 @@ addOns_productsSec.innerHTML = addOnProductsList;
 let cartSectionList = `<div class="cart_section">
     <p class="title">Price Summary</p>
       <div class="cartTotals">
-        <p>Main product<span>$199.99</span></p>
-        <p>3 add-ons selected<span>+ $242.96</span></p>
+        <p>Main product <span id="mainProductsPrice">$199.99</span></p>
+        <p><span id="totalAddOnProduct">0 add-ons selected</span><span id="addonProductsPrice">+ $00.00</span></p>
       </div>
       <div class="cartTotalPrice">
         <div class="price">Total price 
-          <div><p>$441.95</p> <p>SAVE $70.00 (35%)</p></div>
+          <div><p id="totalCartPrice">$199.99</p> <p>SAVE $70.00 (35%)</p></div>
         </div>
       </div>
-      <button type="button" class="addTo_cart">Add 4 items to cart</button>
+      <button type="button" class="addTo_cart">Add <span id="atc_Count">1</span> items to cart</button>
   </div>`;
 
 let cartSection = document.getElementById("product_totalsId");
